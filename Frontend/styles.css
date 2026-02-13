@@ -56,3 +56,37 @@
     line-height: 1.5;
     padding-right: 40px;
 }
+.Proyectos {
+    border-color: black;
+    border: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    text-align: left;
+    margin: 60px 20px;
+}
+.Proyectos__encabezado {
+    text-align: center;
+}
+.Proyectos__comentario {
+    text-align: center;
+}
+.MostrarProyectos {
+    margin: 60px 60px;
+    display: flex;
+    text-align: center;
+}
+.Proyectos__presentacion {
+    text-align: center;
+    background: #0A5B80;
+    padding: 4px;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+.Proyectos__presentacion--imagen {
+    width: 400px;
+    height: 200px;
+}
+.Proyectos__presentacion--texto {
+    color: #FFFFFF;
+}
