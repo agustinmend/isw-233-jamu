@@ -90,3 +90,25 @@
 .Proyectos__presentacion--texto {
     color: #FFFFFF;
 }
+.Marco__Blog {
+    background: rgba(10, 91, 128, 0.75);
+    width: 100%;
+    height: 736px;
+}
+.Blog__Encabezado {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+}
+.Blog__Publicacion {
+    background: #FFFFFF;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.Blog__Publicacion--Titulo {
+    font-family :Georgia, 'Times New Roman', Times, serif;
+}
+.Blog__Publicacion--Fecha {
+    color: #6A7282;
+}
