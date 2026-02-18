@@ -1,0 +1,29 @@
+.Encabezado {
+    border-color: black;
+    border-width: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    text-align: right;
+    padding: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.Encabezado__Titulo {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+.Principal {
+    margin-top: 200px;
+    background: rgba(10, 91, 128, 0.17);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 70px;
+}
+.Principal__Carrera {
+    text-align: center;
+}
+.Principal__Nombre {
+    text-align: center;
+}

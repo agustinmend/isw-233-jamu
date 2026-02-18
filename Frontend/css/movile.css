@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+    .SobreMi {
+        margin: 20px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .SobreMi__Imagen, 
+    .SobreMi__Encabezado, 
+    .SobreMi__Saludo, 
+    .SobreMi__Presentacion {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .SobreMi__Imagen {
+        margin: 0 auto 20px auto;
+    }
+
+    .Habilidades__Segmentos {
+        flex-direction: column;
+    }
+
+    .Habilidades__Segmento {
+        border-left: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 30px 0;
+    }
+    
+    .Habilidades__Segmento:last-child {
+        border-bottom: none;
+    }
+
+    .MostrarProyectos {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .Proyectos__presentacion {
+        margin: 20px 0;
+    }
+
+    .Principal, .Marco {
+        margin-top: 50px;
+        padding: 20px;
+    }
+    
+    .Encabezado {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .Encabezado__Titulo {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+}

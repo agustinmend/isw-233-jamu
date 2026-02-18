@@ -1,0 +1,21 @@
+.MarcoFinal {
+    margin-top: 50px;
+    padding-top: 50px;
+    height: 200px;
+    width: 100%;
+    background: #0A5B80;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.RedesSociales {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+.RedSocial {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #FFFFFF;
+}
