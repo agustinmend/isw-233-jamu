@@ -2,22 +2,24 @@
 <html lang="en">
     <head>
         <title>Portafolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
         <div class="Encabezado">
-            <a class="Encabezado__Titulo">Inicio</a>
-            <a class="Encabezado__Titulo">Sobre mí</a>
-            <a class="Encabezado__Titulo">Proyectos</a>
-            <a class="Encabezado__Titulo">Blogs</a>
-            <a class="Encabezado__Titulo">Contacto</a>
+            <a href="#inicio" class="Encabezado__Titulo">Inicio</a>
+            <a href="#SobreMi" class="Encabezado__Titulo">Sobre mí</a>
+            <a href="#Habilidades" class="Encabezado__Titulo">Habilidades</a>
+            <a href="#Proyectos" class="Encabezado__Titulo">Proyectos</a>
+            <a href="#Blogs" class="Encabezado__Titulo">Blogs</a>
+            <a href="#Contacto" class="Encabezado__Titulo">Contacto</a>
         </div>
-        <div class="Principal">
+        <div id="inicio" class="Principal">
             <h1 class="Principal__Carrera">Estudiante Ingenieria de software</h1>
             <h2 class="Principal__Nombre">Jose Agustin Mendoza Ureña</h2>
         </div>
-        <div class="Marco">
+        <div id="SobreMi" class="Marco">
             <div class="SobreMi">
                 <img src="Foto perfil" class="SobreMi__Imagen">
                 <h2 class="SobreMi__Encabezado">Sobre mí</h2>
@@ -25,7 +27,7 @@
                 <p class="SobreMi__Presentacion">Desde pequeño siempre me a gustado resolver problemas complejos que conlleven razonamiento logico, he tenido el privilegio de ganar beca en la UCB en la cual actualmente sigo estudiando. Soy una persona tranquila, con gusto por el trabajo en equipo y me gusta desarrollar nuevas habilidades.</p>
             </div>
         </div>
-        <div class="Habilidades">
+        <div id="Habilidades" class="Habilidades">
             <h2 class="Habilidades__Encabezado">Habilidades</h2>
             <div class="Habilidades__Segmentos">
                 <div class="Habilidades__Segmento">
@@ -93,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="Proyectos">
+        <div id="Proyectos" class="Proyectos">
             <h2 class="Proyectos__encabezado">Proyectos</h2>
             <p class="Proyectos__comentario">Aqui tienes algunos proyectos en los que he trabajado</p>
             <div class="MostrarProyectos">
@@ -111,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div class="Marco__Blog">
+        <div id="Blogs" class="Marco__Blog">
             <h2 class="Blog__Encabezado">Blog</h2>
             <div class="Blog__Publicacion">
                 <h3 class="Blog__Publicacion--Titulo">Mejores practicas en desarrollo de Software</h3>
@@ -129,7 +131,7 @@
                 <p class="Blog__Publicacion--Texto">En este apartado dejo escrito lo sufrido en carne propia al momento de entender y aplicar los conceptos de POO</p>
             </div>
         </div>
-        <div class="MarcoContacto">
+        <div id="Contacto" class="MarcoContacto">
             <h2 class="Contacto__Encabezado">Contacto</h2>
             <div class="Contacto__Formulario">
                 <form>
