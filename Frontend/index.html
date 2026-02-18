@@ -3,6 +3,7 @@
     <head>
         <title>Portafolio</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
         <div class="Encabezado">
@@ -24,40 +25,72 @@
                 <p class="SobreMi__Presentacion">Desde pequeño siempre me a gustado resolver problemas complejos que conlleven razonamiento logico, he tenido el privilegio de ganar beca en la UCB en la cual actualmente sigo estudiando. Soy una persona tranquila, con gusto por el trabajo en equipo y me gusta desarrollar nuevas habilidades.</p>
             </div>
         </div>
-        <div>
-            <h2>Habilidades</h2>
-            <div>
-                <!--Icono-->
-                <h3>Desarrollador frontend</h3>
-                <p>Experiencia basica en desarrollo de frontend, conocimiento basico en herramientas de frontend</p>
-                <h4>herramientas de desarrollo</h4>
-                <ul>
-                    <li>Angular</li>
-                    <li>React</li>
-                </ul>
-            </div>
-            <div>
-                <!--Icono-->
-                <h3>Desarrollador Backend</h3>
-                <p>Experiencia basica en desarrollo de Backend, conocimiento de conceptos basicos</p>
-                <h4>herramientas de desarrollo</h4>
-                <ul>
-                    <li>.Net</li>
-                    <li>Node.js</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>MongoDB</li>
-                </ul>
-            </div>
-            <div>
-                <!--Icono-->
-                <h3>Otras habilidades</h3>
-                <p>Poseo habilidades extras como buen trabajo en equipo y manejo de otras herramientas</p>
-                <h4>herramientas que uso</h4>
-                <ul>
-                    <li>Miro</li>
-                    <li>Git</li>
-                </ul>
+        <div class="Habilidades">
+            <h2 class="Habilidades__Encabezado">Habilidades</h2>
+            <div class="Habilidades__Segmentos">
+                <div class="Habilidades__Segmento">
+                    <div class="Habilidades__Segmento--Icono">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="Habilidades__Segmento--Encabezado1">
+                        <h3>Desarrollador frontend</h3>
+                    </div>
+                    <div class="Habilidades__Segmento--Texto">
+                        <p>Experiencia basica en desarrollo de frontend, conocimiento basico en herramientas de frontend</p>
+                    </div>
+                    <div class="Habilidades__Segmento--Encabezado2">
+                        <h4>herramientas de desarrollo</h4>
+                    </div>
+                    <div class="Habilidades__Segmento--Herramientas">
+                        <ul>
+                            <li>Angular</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Habilidades__Segmento">
+                    <div class="Habilidades__Segmento--Icono">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <div class="Habilidades__Segmento--Encabezado1">
+                        <h3>Desarrollador Backend</h3>
+                    </div>
+                    <div class="Habilidades__Segmento--Texto">
+                        <p>Experiencia basica en desarrollo de Backend, conocimiento de conceptos basicos</p>
+                    </div>
+                    <div class="Habilidades__Segmento--Encabezado2">
+                        <h4>herramientas de desarrollo</h4>
+                    </div>
+                    <div class="Habilidades__Segmento--Herramientas">
+                        <ul>
+                            <li>.Net</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Habilidades__Segmento">
+                    <div class="Habilidades__Segmento--Icono">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <div class="Habilidades__Segmento--Encabezado1">
+                        <h3>Otras habilidades</h3>
+                    </div>
+                    <div class="Habilidades__Segmento--Texto">
+                        <p>Poseo habilidades extras como buen trabajo en equipo y manejo de otras herramientas</p>
+                    </div>
+                    <div class="Habilidades__Segmento--Encabezado2">
+                        <h4>herramientas que uso</h4>
+                    </div>
+                    <div class="Habilidades__Segmento--Herramientas">
+                        <ul>
+                            <li>Miro</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="Proyectos">
@@ -96,25 +129,29 @@
                 <p class="Blog__Publicacion--Texto">En este apartado dejo escrito lo sufrido en carne propia al momento de entender y aplicar los conceptos de POO</p>
             </div>
         </div>
-        <div>
-            <h2>Contacto</h2>
-            <div>
+        <div class="MarcoContacto">
+            <h2 class="Contacto__Encabezado">Contacto</h2>
+            <div class="Contacto__Formulario">
                 <form>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="escribe tu nombre">
-                    <label>Email</label>
-                    <input type="email" placeholder="ingresa tu email">
-                    <label>Mensaje</label>
-                    <input type="text" placeholder="Deja tu mensaje">
-                    <button type="submit">Enviar</button>
+                    <div class="Contacto__Formulario--Texto">Nombre</div>
+                    <input type="text" placeholder="escribe tu nombre" class="Contacto__Formulario--Entrada">
+                    <div class="Contacto__Formulario--Texto">Email</div>
+                    <input type="email" placeholder="ingresa tu email" class="Contacto__Formulario--Entrada">
+                    <div class="Contacto__Formulario--Texto">Mensaje</div>
+                    <input type="text" placeholder="Deja tu mensaje" class="Contacto__Formulario--Mensaje">
+                    <button type="submit" class="Contacto__Formulario--Enviar">Enviar</button>
                 </form>
             </div>
         </div>
-        <div>
-            <!--Icono-->
-            <a>LinkedIn</a>
-            <!--Icono-->
-            <a>Github</a>
+        <div class="MarcoFinal">
+            <div class="RedSocial">
+                <!--Icono-->
+                <a>LinkedIn</a>
+            </div>
+            <div class="RedSocial">
+                <!--Icono-->
+                <a>Github</a>
+            </div>
             <p>© 2026 Jose Agustin Mendoza Ureña. Todos los derechos reservados.</p>
         </div>
     </body>

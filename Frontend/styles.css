@@ -56,10 +56,54 @@
     line-height: 1.5;
     padding-right: 40px;
 }
+.Habilidades {
+    width: 1187px;
+    height: 661px;
+    margin: 0 auto;
+    margin-top: -100px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.Habilidades__Encabezado {
+    
+}
+.Habilidades__Segmentos {
+    display: flex;
+    flex-grow: 1;
+}
+.Habilidades__Segmento {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Habilidades__Segmento--Icono {
+    border: 1px solid #A2EECE;
+    background: #A2EECE;
+    border-radius: 100%;
+    padding: 9px;
+    margin: 15px;
+}
+
+.Habilidades__Segmento--Encabezado1 {
+    text-align: center;
+}
+.Habilidades__Segmento--Texto {
+    margin: 0 15px;
+    
+}
+.Habilidades__Segmento--Encabezado2 {
+    color: #0A5B80;
+}
+
 .Proyectos {
-    border-color: black;
-    border: 1px;
-    border-style: solid;
+    border: 1px solid rgba(0,0,0 , 0.1);
     border-radius: 4px;
     text-align: left;
     margin: 60px 20px;
@@ -111,4 +155,57 @@
 }
 .Blog__Publicacion--Fecha {
     color: #6A7282;
+}
+.MarcoContacto {
+    width: 923px;
+    height: 594px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+.Contacto__Encabezado {
+
+}
+.Contacto__Formulario {
+    width: 855px;
+    height: 409px;
+    border-color: black;
+    border: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    line-height: 2.0;
+    margin: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 10%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.Contacto__Formulario--Texto {
+    margin-left: 2%;
+}
+.Contacto__Formulario--Entrada {
+    width: 95%;
+    margin-left: 2%;
+}
+.Contacto__Formulario--Mensaje {
+    width: 95%;
+    margin-left: 2%;
+    height: 80px;
+}
+.Contacto__Formulario--Enviar {
+    background-color: #0A5B80;
+    width: 95%;
+    margin-left: 2%;
+}
+
+.MarcoFinal {
+    margin-top: 50px;
+    padding-top: 50px;
+    height: 200px;
+    width: 100%;
+    background: #0A5B80;
+    text-align: center;
+    color: #FFFFFF;
 }
