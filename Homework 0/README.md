@@ -79,3 +79,7 @@ La modularización del código, dividiendo los estilos en archivos específicos 
 
 ## Optimización de la Navegación
 Se implementó para reducir la fricción del usuario, permitiendo un acceso inmediato a la información relevante (como el contacto o los repositorios de GitHub) sin recargas de página.
+
+# Conversaciones con IA
+https://gemini.google.com/share/660f6a25ec79
+https://gemini.google.com/share/ea9244d03f1b
