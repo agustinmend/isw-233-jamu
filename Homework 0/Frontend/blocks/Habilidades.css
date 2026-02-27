@@ -11,9 +11,6 @@
     flex-direction: column;
     padding-bottom: 20px;
 }
-.Habilidades__Encabezado {
-    
-}
 .Habilidades__Segmentos {
     display: flex;
     flex-grow: 1;

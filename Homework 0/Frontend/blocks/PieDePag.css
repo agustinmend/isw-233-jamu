@@ -1,4 +1,4 @@
-.MarcoFinal {
+.PieDePag {
     margin-top: 50px;
     padding-top: 50px;
     height: 200px;
@@ -9,12 +9,12 @@
     display: flex;
     flex-direction: column;
 }
-.RedesSociales {
+.PieDePag__RedesSociales {
     margin: 0 auto;
     display: flex;
     text-align: center;
 }
-.RedSocial {
+.PiedePag__RedesSociales__RedSocial {
     text-decoration: none;
     margin: 0 10px;
     color: #FFFFFF;

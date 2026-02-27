@@ -14,16 +14,3 @@
     text-decoration: none;
     color: black;
 }
-.Principal {
-    margin-top: 200px;
-    background: rgba(10, 91, 128, 0.17);
-    margin-left: 0;
-    margin-right: 0;
-    padding: 70px;
-}
-.Principal__Carrera {
-    text-align: center;
-}
-.Principal__Nombre {
-    text-align: center;
-}
