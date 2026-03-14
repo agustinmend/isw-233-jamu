@@ -1,49 +1,45 @@
-export const Router = {
-    init: () => {
-        document.querySelectorAll(".Encabezado__Titulo").forEach((a) => {
-            a.addEventListener("click", (event) => {
+export class Router {
+    constructor() {
+        if(Router.instance) {
+            return instance
+        }
+        Router.instance = this
+        this.rutas = {
+            '/' : 'vista-inicio',
+            '/sobremi' : 'vista-sobremi',
+            '/habilidades' : 'vista-habilidades',
+            '/proyectos' : 'vista-proyectos',
+            '/blog' : 'vista-blog',
+            '/contacto' : 'vista-contacto'
+        }
+        this.appRoot = document.getElementById('app-root')
+        if(!this.appRoot) {
+            console.error('no se encontro el contenedor app-route')
+            return
+        }
+        this.init()
+    }
+    init() {
+        document.body.addEventListener('click', (event) => {
+            if(event.target.matches('[data-link]')) {
                 event.preventDefault()
-                const hash = event.target.getAttribute("href")
-                const route = Router.hashToRoute(hash)
-                Router.go(route)
-            })
+                const ruta = event.target.getAttribute('href')
+                this.go(ruta)
+            }
         })
-        window.addEventListener("popstate", (event) => {
-            Router.go(event.state?.route || "/", false)
+        window.addEventListener('popstate', () => {
+            this.render(window.location.pathname)
         })
-        Router.go(location.pathname)
-    },
-    hashToRoute : (hash) => {
-        const routes = {
-            "#inicio" : "/",
-            "#SobreMi" : "/sobre-mi",
-            "#Habilidades" : "habilidades",
-            "#Proyectos": "/proyectos",
-            "#Blogs": "/blogs",
-            "#Contacto": "/contacto"
-        }
-        return routes[hash] || "/"
-    },
-    go : (route , addToHystory = true) => {
-        if(addToHystory) {
-            history.pushState({ route}, "", route)
-        }
-        const routeMap = {
-            "/": "inicio",
-            "/sobre-mi": "SobreMi",
-            "/habilidades": "Habilidades",
-            "/proyectos": "Proyectos",
-            "/blogs": "Blogs",
-            "/contacto": "Contacto"
-        }
-        const targetId = routeMap[route]
-        const sections = document.querySelectorAll("#inicio, #SobreMi, #Habilidades, #Proyectos, #Blogs, #Contacto")
-        sections.forEach(section => {
-            section.style.display = "none"
-        })
-        if(targetId) {
-            document.getElementById(targetId).style.display = "block"
-        }
-        window.scrollTo(0,0)
+        this.render(window.location.pathname    )
+    }
+    go(ruta) {
+        window.history.pushState({}, '', ruta)
+        this.render(ruta)
+    }
+    render(ruta) {
+        const nombreComponente = this.rutas[ruta] || 'vista-inicio'
+        this.appRoot.innerHTML = ''
+        const vista = document.createElement(nombreComponente)
+        this.appRoot.appendChild(vista)
     }
 }
