@@ -6,13 +6,16 @@ El proyecto está organizado de manera modular para facilitar el mantenimiento y
 
 ## Archivos principales
 
+## index.js
+Archivo que contiene el router y las importaciones necesarias para hacer que la pagina funcione
+
 ### index.html
 Archivo principal que contiene el marcado semántico de todas las secciones del portafolio.
 
 ### styles.css
 Archivo maestro que gestiona la importación de todos los módulos de estilos.
 
-## Carpeta css/
+## Carpeta blocks/
 
 Contiene los archivos especializados por sección:
 
@@ -25,6 +28,32 @@ Contiene los archivos especializados por sección:
 - Redes.css
 
 Cada archivo define los estilos específicos de su respectiva sección.
+
+## Carpeta components/
+Contiene los componentes centrados en sus responsabilidades:
+
+- blog.js
+- contacto.js
+- encabezado.js
+- habilidades.js
+- inicio.js
+- pieDePagina.js
+- proyectos.js
+- sobreMi.js
+ 
+## Patrones de diseño usados
+
+### Singleton
+Se vio la necesidad de usar el patron de diseño Singleton debido a que un enrutador SPA debe tener una unica instancia, permitir tener varias instancias podria generar problemas de colision
+
+### Singleton
+Se uso el patron Singleton para mantener una unica instancia al Store, debido a que ahora mismo es el que maneja los datos y para evitar problemas de concurrencia
+
+## Observer
+Se implemento el patron Observer para el estado de los favoritos, se concidero que el patron era el adecuado para esta tarea, su sistema de suscripcion se lo considero ideal para manejar los favoritos y su relacion con el Store
+
+## Strategy
+El patron Strategy fue usado para la funcionalidad de filtros con el objetivo de hacer el codigo abierto a extension se uso Strategy para definir distintas strategias de busqueda en los filtros
 
 ## Adaptabilidad
 
@@ -83,3 +112,5 @@ Se implementó para reducir la fricción del usuario, permitiendo un acceso inme
 # Conversaciones con IA
 https://gemini.google.com/share/660f6a25ec79
 https://gemini.google.com/share/ea9244d03f1b
+https://gemini.google.com/share/d60c02c04af5
+https://gemini.google.com/share/7908dc3d94a0

@@ -1,5 +1,5 @@
 import { globalStore } from "../services/store.js"
-
+import { EstrategiasFiltrado} from "../services/filtros.js"
 export class BlogComponent extends HTMLElement {
     constructor() {
         super()
@@ -34,6 +34,15 @@ export class BlogComponent extends HTMLElement {
                 const idArticulo = event.target.closest('.Blog__Publicacion').dataset.id
                 console.log(`Intentando guardar en Store el artículo con ID: ${idArticulo}`);
                 globalStore.alternarFavorito(idArticulo)
+            })
+        })
+        const botonesFiltro = this.querySelectorAll('[data-filtro]')
+        botonesFiltro.forEach(boton => {
+            boton.addEventListener('click', (e) => {
+                const tipoFiltro = e.target.dataset.filtro
+                if(EstrategiasFiltrado[tipoFiltro]) {
+                    EstrategiasFiltrado[tipoFiltro](this.articulosDOM)
+                }
             })
         })
         globalStore.suscribir(this)
