@@ -25,7 +25,7 @@ export class Store {
         else {
             this.favoritos.push(idArticulo)
         }
-        localStorage.setItem('blogFavoritos', JSON.stringify(this.favoritos))
+        localStorage.setItem('blog_favoritos', JSON.stringify(this.favoritos))
         console.log("Store actualizado. Notificando observadores con:", this.favoritos);
         this.notificar()
     }
