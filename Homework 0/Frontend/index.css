@@ -7,3 +7,15 @@
 @import 'blocks/PieDePag.css';
 @import 'blocks/SobreMi.css';
 @import 'blocks/Encabezado.css';
+
+html,body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+main {
+    flex: 1;    
+}

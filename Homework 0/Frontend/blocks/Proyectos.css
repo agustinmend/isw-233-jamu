@@ -12,16 +12,17 @@
 }
 .MostrarProyectos {
     margin: 60px 60px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
     text-align: center;
 }
 .Proyectos__presentacion {
     text-align: center;
     background: #0A5B80;
     padding: 4px;
-    max-width: 400px; width: 100%;
+    width: 100%;
     height: auto ; min-height: 400px;
-    margin: 20px;
 }
 .Proyectos__presentacion--imagen {
     width: 100%;
