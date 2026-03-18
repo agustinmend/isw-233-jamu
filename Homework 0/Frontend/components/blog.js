@@ -1,8 +1,10 @@
 import { globalStore } from "../services/store.js"
 import { EstrategiasFiltrado} from "../services/filtros.js"
+import { crearObservador } from "../services/mutation_observer.js"
 export class BlogComponent extends HTMLElement {
     constructor() {
         super()
+        this.obsevadorMutaciones = null
     }
     connectedCallback() {
         if(this.children.length === 0) {
@@ -10,6 +12,7 @@ export class BlogComponent extends HTMLElement {
             if(template) {
                 this.appendChild(template.content.cloneNode(true))
                 this.iniciarComponente()
+                this.configurarObservadorDOM()
             }
             else {
                 console.error('template no encontrado tpl-Blogs')
@@ -18,21 +21,40 @@ export class BlogComponent extends HTMLElement {
     }
     disconnectedCallback() {
         globalStore.desuscribir(this)
+        if(this.obsevadorMutaciones) {
+            this.obsevadorMutaciones.disconnect()
+            this.obsevadorMutaciones = null
+        }
+    }
+    configurarObservadorDOM() {
+        const contenedor = this.querySelector('#Blogs')
+        const contadorDOM = this.querySelector('#contador-blog')
+        if(!contenedor || !contadorDOM) return
+        this.obsevadorMutaciones = crearObservador(
+            contenedor,
+            () => this.actualizarContadorUI(contadorDOM)
+        )
+        this.actualizarContadorUI(contadorDOM)
+    }
+    actualizarContadorUI(contadorDOM) {
+        if(!this.articulosDOM) return
+        const visibles = this.articulosDOM.filter(articulo => {
+            const estilo = window.getComputedStyle(articulo)
+            return estilo.display !== 'none' && !articulo.hasAttribute('hidden')
+        }).length
+        contadorDOM.textContent = `Resultados: ${visibles}`
     }
     iniciarComponente() {
         this.articulosDOM = Array.from(this.querySelectorAll('.Blog__Publicacion'))
         const botones = this.querySelectorAll('.Blog__Favorito')
-        console.log(`se encontraron ${botones.length} botones de favoritos`)
         botones.forEach(boton => {
             boton.addEventListener('click', (event) => {
                 console.log("Clic detectado en el botón", event.target);
                 const contenedorPadre = event.target.closest('.Blog__Publicacion');
                 if (!contenedorPadre) {
-                    console.error("Error Arquitectónico: El botón no está dentro de un elemento con clase .Blog__Publicacion");
                     return;
                 }
                 const idArticulo = event.target.closest('.Blog__Publicacion').dataset.id
-                console.log(`Intentando guardar en Store el artículo con ID: ${idArticulo}`);
                 globalStore.alternarFavorito(idArticulo)
             })
         })
