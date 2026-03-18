@@ -1,7 +1,7 @@
 export class Router {
     constructor() {
         if(Router.instance) {
-            return instance
+            return Router.instance
         }
         Router.instance = this
         this.rutas = {

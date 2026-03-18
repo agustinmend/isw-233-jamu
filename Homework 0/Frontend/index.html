@@ -115,42 +115,17 @@
             <div id="Proyectos" class="Proyectos">
                 <h2 class="Proyectos__encabezado">Proyectos</h2>
                 <p class="Proyectos__comentario">Aqui tienes algunos proyectos en los que he trabajado</p>
-                <div class="MostrarProyectos">
-                    <div class="Proyectos__presentacion">
-                        <img src="Imagenes\descarga.jpg" class="Proyectos__presentacion--imagen">
-                        <p class="Proyectos__presentacion--texto">Sistema de Tiendas en linea Pagina Web de manejo de tiendas en linea usando C# como backend y Angular como frontend</p>
-                    </div>
-                    <div class="Proyectos__presentacion">
-                        <img src="Imagenes\descarga (1).jpg" class="Proyectos__presentacion--imagen">
-                        <p class="Proyectos__presentacion--texto">Sistema de Pedidos en linea Pagina Web de manejo de Pedidos a diferentes ciudades enfocado en usar buenas estructuras de datos</p>
-                    </div>
-                    <div class="Proyectos__presentacion">
-                        <img src="Imagenes\descarga (2).jpg" class="Proyectos__presentacion--imagen">
-                        <p class="Proyectos__presentacion--texto">Sistema de citas medicas en linea Pagina Web de manejo de las citas medicas de una clinica enfocada en usar las buenas practicas como principios SOLID y patrones de diseño</p>
-                    </div>
-                    
-                    <div class="Proyectos__presentacion">
-                        <img src="Imagenes\biblioteca.jpeg" class="Proyectos__presentacion--imagen">
-                        <p class="Proyectos__presentacion--texto">Sistema de gestion para una biblioteca enfocada en usar herramientas de Base de datos como ser indices, store procedures y triggers</p>
-                    </div>
-                    
-                    <div class="Proyectos__presentacion">
-                        <img src="Imagenes\arqui.jpg" class="Proyectos__presentacion--imagen">
-                        <p class="Proyectos__presentacion--texto">Simulador de arquitectura de computadora desarrollado para mostrar de forma entendible como funciona una computadora internamente</p>
-                    </div>
-                    
-                    <div class="Proyectos__presentacion">
-                        <img src="Imagenes/psicologo.jpg" class="Proyectos__presentacion--imagen">
-                        <p class="Proyectos__presentacion--texto">Manejador de citas para psicologo desarrollado con el fin de ofrecer una solucion al manejo de citas a papel clasico</p>
-                    </div>
-                    
-                    <div class="Proyectos__presentacion">
-                        <img src="Imagenes/residencial.jpg" class="Proyectos__presentacion--imagen">
-                        <p class="Proyectos__presentacion--texto">Sistema de reservas de residencial, proyecto para el manejo de un residencial con operaciones CRUD y opcion de migracion de la BD entre sql server y mysql</p>
-                    </div>
-                </div>
+                <div class="MostrarProyectos" id="tablero-proyectos"></div>
+                <div id="centinela-proyectos" style="height: 10px; width: 100%;"></div>
             </div>
         </template>
+        <template id="tpl-proyecto-card">
+            <div class="Proyectos__presentacion">
+                <img src="" class="Proyectos__presentacion--imagen">
+                <p class="Proyectos__presentacion--texto"></p>
+            </div>
+        </template>
+
         
         <template id="tpl-Blogs">
             <div id="Blogs" class="Blog">
