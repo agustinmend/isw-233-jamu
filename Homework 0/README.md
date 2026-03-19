@@ -49,11 +49,27 @@ Se vio la necesidad de usar el patron de diseño Singleton debido a que un enrut
 ### Singleton
 Se uso el patron Singleton para mantener una unica instancia al Store, debido a que ahora mismo es el que maneja los datos y para evitar problemas de concurrencia
 
-## Observer
+### Observer
 Se implemento el patron Observer para el estado de los favoritos, se concidero que el patron era el adecuado para esta tarea, su sistema de suscripcion se lo considero ideal para manejar los favoritos y su relacion con el Store
 
-## Strategy
+### Strategy
 El patron Strategy fue usado para la funcionalidad de filtros con el objetivo de hacer el codigo abierto a extension se uso Strategy para definir distintas strategias de busqueda en los filtros
+
+## Observer APIs
+### IntersectionObserver
+*Donde se implemento*: proyectos.js
+*Que problema resuelve*: El bloqueo del hilo principal causado por la carga y renderizado de nodos HTML de forma simultanea(Lazy loading)
+*Por que esta API*: El evento scroll es síncrono y se dispara cientos de veces por segundo. Forzar al navegador a leer la geometría del DOM en cada iteración del scroll causa Layout Thrashing, lo que destruye el rendimiento y baja los cuadros por segundo, IntersectionObserver soluciona esto delegando la vigilancia geométrica a un subproceso interno del navegador, ejecutando el callback en el hilo de JavaScript únicamente cuando se cruza el umbral asíncronamente, garantizando un impacto computacional casi nulo.
+
+### MutationObserver
+*Donde se implemento*: mutation_observer.js blog.js
+*Que problema resuelve*: Mantiene sincronizado el estado visual de la interfaz (un contador dinámico de "Resultados: X") reaccionando a las alteraciones del árbol DOM causadas por el sistema de filtros
+*Por que esta API*: Al usar MutationObserver logramos un patrón de programación reactiva nativa. El contador es autónomo: "escucha" los cambios de estado en el contenedor de artículos de forma pasiva. Si mañana se introduce una nueva forma de ocultar artículos (ej. una barra de búsqueda de texto o borrado desde el servidor), el contador se actualizará automáticamente sin tocar una sola línea de la lógica de los botones, garantizando la escalabilidad del componente.
+
+### ResizeObserver
+*Donde se implemento*: resize_observer.js contacto.js
+*Que problema resuelve*: Provee feedback visual interactivo (alerta de límite de tamaño) cuando el usuario manipula elementos redimensionables arbitrariamente previniendo que la mutación manual sobrepase los límites del diseño de su contenedor padre inmediato.
+*Por que esta API*: ResizeObserver es la única API que ofrece acceso al objeto contentRect de forma eficiente, permitiendo que la aplicación tome decisiones lógicas (como alertas visuales o recalibración de layouts internos) basadas en el tamaño real y fluido del componente en el DOM.
 
 ## Adaptabilidad
 
@@ -114,3 +130,5 @@ https://gemini.google.com/share/660f6a25ec79
 https://gemini.google.com/share/ea9244d03f1b
 https://gemini.google.com/share/d60c02c04af5
 https://gemini.google.com/share/7908dc3d94a0
+https://gemini.google.com/share/6bcc35ddaeb1
+https://chatgpt.com/share/69bb65ed-2470-8002-aca6-341d844b28df
