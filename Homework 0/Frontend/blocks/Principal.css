@@ -11,3 +11,9 @@
 .principal__nombre {
     text-align: center;
 }
+@media (max-width: 768px) {
+    .principal, .marco {
+        margin-top: 50px;
+        padding: 20px;
+    }
+}

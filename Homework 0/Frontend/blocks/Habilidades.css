@@ -41,3 +41,18 @@
 .habilidades__segmento--encabezado-2 {
     color: #0A5B80;
 }
+@media (max-width: 768px) {
+    .habilidades__segmentos {
+        flex-direction: column;
+    }
+
+    .habilidades__segmento {
+        border-left: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 30px 0;
+    }
+    
+    .habilidades__segmento:last-child {
+        border-bottom: none;
+    }
+}

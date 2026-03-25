@@ -30,3 +30,25 @@
     line-height: 1.5;
     padding-right: 40px;
 }
+@media (max-width: 768px) {
+    .sobre-mi {
+        margin: 20px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-mi__imagen, 
+    .sobre-mi__encabezado, 
+    .sobre-mi__saludo, 
+    .sobre-mi__presentacion {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .sobre-mi__imagen {
+        margin: 0 auto 20px auto;
+    }
+}

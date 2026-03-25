@@ -31,3 +31,14 @@
 .proyectos__presentacion--texto {
     color: #FFFFFF;
 }
+@media (max-width: 768px) {
+    .mostrar-proyectos {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .proyectos__presentacion {
+        margin: 20px 0;
+    }
+}

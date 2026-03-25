@@ -14,3 +14,14 @@
     text-decoration: none;
     color: black;
 }
+@media (max-width: 768px) {
+    .encabezado {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .encabezado__titulo {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+}
