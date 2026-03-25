@@ -4,7 +4,7 @@ export class SobreMiComponent extends HTMLElement {
     }
     connectedCallback() {
         if(this.children.length === 0) {
-            const template = document.getElementById('tpl-SobreMi')
+            const template = document.getElementById('tpl-sobre-mi')
             if(template) {
                 this.appendChild(template.content.cloneNode(true))
             }

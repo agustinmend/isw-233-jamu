@@ -8,7 +8,7 @@ export class BlogComponent extends HTMLElement {
     }
     connectedCallback() {
         if(this.children.length === 0) {
-            const template = document.getElementById('tpl-Blogs')
+            const template = document.getElementById('tpl-blogs')
             if(template) {
                 this.appendChild(template.content.cloneNode(true))
                 this.iniciarComponente()
@@ -27,7 +27,7 @@ export class BlogComponent extends HTMLElement {
         }
     }
     configurarObservadorDOM() {
-        const contenedor = this.querySelector('#Blogs')
+        const contenedor = this.querySelector('#blogs')
         const contadorDOM = this.querySelector('#contador-blog')
         if(!contenedor || !contadorDOM) return
         this.obsevadorMutaciones = crearObservador(
@@ -45,16 +45,16 @@ export class BlogComponent extends HTMLElement {
         contadorDOM.textContent = `Resultados: ${visibles}`
     }
     iniciarComponente() {
-        this.articulosDOM = Array.from(this.querySelectorAll('.Blog__Publicacion'))
-        const botones = this.querySelectorAll('.Blog__Favorito')
+        this.articulosDOM = Array.from(this.querySelectorAll('.blog__publicacion'))
+        const botones = this.querySelectorAll('.blog__favorito')
         botones.forEach(boton => {
             boton.addEventListener('click', (event) => {
                 console.log("Clic detectado en el botón", event.target);
-                const contenedorPadre = event.target.closest('.Blog__Publicacion');
+                const contenedorPadre = event.target.closest('.blog__publicacion');
                 if (!contenedorPadre) {
                     return;
                 }
-                const idArticulo = event.target.closest('.Blog__Publicacion').dataset.id
+                const idArticulo = event.target.closest('.blog__publicacion').dataset.id
                 globalStore.alternarFavorito(idArticulo)
             })
         })
@@ -73,7 +73,7 @@ export class BlogComponent extends HTMLElement {
         console.log("El componente Blog escuchó la actualización. Datos recibidos:", favoritos);
         this.articulosDOM.forEach(articulo => {
             const id = articulo.dataset.id
-            const boton = articulo.querySelector('.Blog__Favorito')
+            const boton = articulo.querySelector('.blog__favorito')
             if (favoritos.includes(id)) {
                 boton.textContent = 'Favorito';
                 boton.style.color = 'red';

@@ -23,8 +23,8 @@ export class ContactoComponent extends HTMLElement {
         }
     }
     configurarEfectoLmites() {
-        const textarea = this.querySelector('.Contacto__Formulario--Mensaje')
-        const contenedor = this.querySelector('.Contacto__Formulario')
+        const textarea = this.querySelector('.contacto__formulario--mensaje')
+        const contenedor = this.querySelector('.contacto__formulario')
         if(!textarea || !contenedor) return
         textarea.style.resize = 'both'
         textarea.style.maxWidth = '96%'

@@ -1,4 +1,4 @@
-.Contacto {
+.contacto {
     max-width: 923px; width: 90%;
     height: auto;
     padding-bottom: 20px;
@@ -8,10 +8,10 @@
     margin: auto;
     margin-top: 50px;
 }
-.Contacto__Encabezado {
+.contacto__encabezado {
 
 }
-.Contacto__Formulario {
+.contacto__formulario {
     width: 90%;
     margin: 20px auto;
     height: auto;
@@ -23,19 +23,19 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: left;
 }
-.Contacto__Formulario--Texto {
+.contacto__formulario--texto {
     margin-left: 2%;
 }
-.Contacto__Formulario--Entrada {
+.contacto__formulario--entrada {
     width: 95%;
     margin-left: 2%;
 }
-.Contacto__Formulario--Mensaje {
+.contacto__formulario--mensaje {
     width: 95%;
     margin-left: 2%;
     height: 80px;
 }
-.Contacto__Formulario--Enviar {
+.contacto__formulario--enviar {
     background-color: #0A5B80;
     width: 95%;
     margin-left: 2%;

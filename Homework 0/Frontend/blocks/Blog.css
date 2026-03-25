@@ -1,23 +1,23 @@
-.Blog {
+.blog {
     background: rgba(10, 91, 128, 0.75);
     width: 100%;
     height: auto;
     padding-bottom: 40px;
 }
-.Blog__Encabezado {
+.blog__encabezado {
     text-align: center;
     color: #FFFFFF;
     padding: 20px;
 }
-.Blog__Publicacion {
+.blog__publicacion {
     background: #FFFFFF;
     margin: 30px;
     padding: 5px;
     border-radius: 10px;
 }
-.Blog__Publicacion--Titulo {
+.blog__publicacion--titulo {
     font-family :Georgia, 'Times New Roman', Times, serif;
 }
-.Blog__Publicacion--Fecha {
+.blog__publicacion--fecha {
     color: #6A7282;
 }

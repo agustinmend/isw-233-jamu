@@ -52,8 +52,8 @@ export class ProyectosComponent extends HTMLElement {
         const fragmentoTarjetas = document.createDocumentFragment()
         lote.forEach((proyecto) => {
             const tarjeta = templateCard.content.cloneNode(true)
-            tarjeta.querySelector('.Proyectos__presentacion--imagen').src = proyecto.img
-            tarjeta.querySelector('.Proyectos__presentacion--texto').textContent = proyecto.txt
+            tarjeta.querySelector('.proyectos__presentacion--imagen').src = proyecto.img
+            tarjeta.querySelector('.proyectos__presentacion--texto').textContent = proyecto.txt
             fragmentoTarjetas.appendChild(tarjeta)
         })
         tableroProyectos.appendChild(fragmentoTarjetas)

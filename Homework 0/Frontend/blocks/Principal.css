@@ -1,13 +1,13 @@
-.Principal {
+.principal {
     margin-top: 200px;
     background: rgba(10, 91, 128, 0.17);
     margin-left: 0;
     margin-right: 0;
     padding: 70px;
 }
-.Principal__Carrera {
+.principal__carrera {
     text-align: center;
 }
-.Principal__Nombre {
+.principal__nombre {
     text-align: center;
 }
