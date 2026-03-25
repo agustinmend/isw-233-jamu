@@ -1,12 +1,11 @@
-@import 'blocks/Blog.css';
-@import 'blocks/Contacto.css';
-@import 'blocks/Habilidades.css';
-@import 'blocks/Principal.css';
-@import 'blocks/movile.css';
-@import 'blocks/Proyectos.css';
-@import 'blocks/PieDePag.css';
-@import 'blocks/SobreMi.css';
-@import 'blocks/Encabezado.css';
+@import '/components/blog/Blog.css';
+@import '/components/contacto/Contacto.css';
+@import '/components/habilidades/Habilidades.css';
+@import '/components/inicio/Principal.css';
+@import '/components/proyectos/Proyectos.css';
+@import '/components/pieDePagina/PieDePag.css';
+@import '/components/sobreMi/SobreMi.css';
+@import '/components/encabezado/Encabezado.css';
 
 html,body {
     height: 100%;
