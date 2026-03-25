@@ -1,4 +1,4 @@
-import { proyectos } from "../services/datos.js"
+import { proyectos } from "../../services/datos.js"
 export class ProyectosComponent extends HTMLElement {
     constructor() {
         super()

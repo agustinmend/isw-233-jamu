@@ -1,4 +1,4 @@
-import { crearObservadorTamanio } from "../services/resize_observer.js"
+import { crearObservadorTamanio } from "../../services/resize_observer.js"
 export class ContactoComponent extends HTMLElement {
     constructor() {
         super()
