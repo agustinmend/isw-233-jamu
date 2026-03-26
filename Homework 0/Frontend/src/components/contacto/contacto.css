@@ -23,19 +23,19 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: left;
 }
-.contacto__formulario--texto {
+.contacto__etiqueta {
     margin-left: 2%;
 }
-.contacto__formulario--entrada {
+.contacto__entrada {
     width: 95%;
     margin-left: 2%;
 }
-.contacto__formulario--mensaje {
+.contacto__mensaje {
     width: 95%;
     margin-left: 2%;
     height: 80px;
 }
-.contacto__formulario--enviar {
+.contacto__boton-enviar {
     background-color: #0A5B80;
     width: 95%;
     margin-left: 2%;

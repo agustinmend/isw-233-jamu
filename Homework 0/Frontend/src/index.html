@@ -44,19 +44,19 @@
                 <h2 class="habilidades__encabezado">Habilidades</h2>
                 <div class="habilidades__segmentos">
                     <div class="habilidades__segmento">
-                        <div class="habilidades__segmento--icono">
+                        <div class="habilidades__icono">
                             <i class="fa-solid fa-code"></i>
                         </div>
-                        <div class="habilidades__segmento--encabezado-1">
+                        <div class="habilidades__subtitulo">
                             <h3>Desarrollador frontend</h3>
                         </div>
-                        <div class="habilidades__segmento--texto">
+                        <div class="habilidades__texto">
                             <p>Experiencia basica en desarrollo de frontend, conocimiento basico en herramientas de frontend</p>
                         </div>
-                        <div class="habilidades__segmento--encabezado-2">
+                        <div class="habilidades__titulo-herramientas">
                             <h4>herramientas de desarrollo</h4>
                         </div>
-                        <div class="habilidades__segmento--herramientas">
+                        <div class="habilidades__lista-herramientas">
                             <ul>
                                 <li>Angular</li>
                                 <li>React</li>
@@ -120,8 +120,8 @@
         </template>
         <template id="tpl-proyecto-card">
             <div class="proyectos__presentacion">
-                <img src="" class="proyectos__presentacion--imagen">
-                <p class="proyectos__presentacion--texto"></p>
+                <img src="" class="proyectos__imagen">
+                <p class="proyectos__texto"></p>
             </div>
         </template>
         
@@ -136,9 +136,9 @@
                     <button data-filtro="favoritos">Favoritos</button>
                 </div>
                 <div class="blog__publicacion" data-id="post-1" data-categoria="desarrollo">
-                    <h3 class="blog__publicacion--titulo">Mejores practicas en desarrollo de Software</h3>
-                    <p class="blog__publicacion--fecha">15 de Enero, 2026</p>
-                    <p class="blog__publicacion--texto">En este articulo señalo cuales son las buenas practicas que uno debe seguir al momento de desarrollar su sistema para mantener su codigo limpio y escalable</p>
+                    <h3 class="blog__titulo">Mejores practicas en desarrollo de Software</h3>
+                    <p class="blog__fecha">15 de Enero, 2026</p>
+                    <p class="blog__texto">En este articulo señalo cuales son las buenas practicas que uno debe seguir al momento de desarrollar su sistema para mantener su codigo limpio y escalable</p>
                     <button class="blog__favorito">Marcar Favorito</button>
                 </div>
                 <div class="blog__publicacion" data-id="post-2" data-categoria="diseno">
@@ -161,13 +161,13 @@
                 <h2 class="contacto__encabezado">Contacto</h2>
                 <div class="contacto__formulario">
                     <form>
-                        <div class="contacto__formulario--texto">Nombre</div>
-                        <input type="text" placeholder="escribe tu nombre" class="contacto__formulario--entrada">
-                        <div class="contacto__formulario--texto">Email</div>
-                        <input type="email" placeholder="ingresa tu email" class="contacto__formulario--entrada">
-                        <div class="contacto__formulario--texto">Mensaje</div>
-                        <textarea placeholder="Deja tu mensaje" class="contacto__formulario--mensaje" rows="5"></textarea>
-                        <button type="submit" class="contacto__formulario--enviar">Enviar</button>
+                        <div class="contacto__etiqueta">Nombre</div>
+                        <input type="text" placeholder="escribe tu nombre" class="contacto__entrada">
+                        <div class="contacto__etiqueta">Email</div>
+                        <input type="email" placeholder="ingresa tu email" class="contacto__entrada">
+                        <div class="contacto__etiqueta">Mensaje</div>
+                        <textarea placeholder="Deja tu mensaje" class="contacto__mensaje" rows="5"></textarea>
+                        <button type="submit" class="contacto__boton-enviar">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -176,10 +176,10 @@
         <template id="tpl-pie-de-pagina">
             <div class="pie-de-pag">
                 <div class="pie-de-pag__redes-sociales">
-                    <a href="https://www.linkedin.com/in/jos%C3%A9-agust%C3%ADn-mendoza-ure%C3%B1a/" class="pie-de-pag__redes-sociales__red-social" target="_blank">
+                    <a href="https://www.linkedin.com/in/jos%C3%A9-agust%C3%ADn-mendoza-ure%C3%B1a/" class="pie-de-pag__red-social" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>LinkedIn
                     </a>
-                    <a href="https://github.com/agustinmend" class="pie-de-pag__redes-sociales__red-social" target="_blank">
+                    <a href="https://github.com/agustinmend" class="pie-de-pag__red-social" target="_blank">
                         <i class="fa-brands fa-github"></i>Github
                     </a>
                 </div>

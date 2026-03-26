@@ -24,11 +24,11 @@
     width: 100%;
     height: auto ; min-height: 400px;
 }
-.proyectos__presentacion--imagen {
+.proyectos__imagen {
     width: 100%;
     height: 200px;
 }
-.proyectos__presentacion--texto {
+.proyectos__texto {
     color: #FFFFFF;
 }
 @media (max-width: 768px) {
