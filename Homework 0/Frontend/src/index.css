@@ -1,11 +1,11 @@
-@import '/components/blog/Blog.css';
-@import '/components/contacto/Contacto.css';
-@import '/components/habilidades/Habilidades.css';
-@import '/components/inicio/Principal.css';
-@import '/components/proyectos/Proyectos.css';
-@import '/components/pieDePagina/PieDePag.css';
-@import '/components/sobreMi/SobreMi.css';
-@import '/components/encabezado/Encabezado.css';
+@import '/components/blog/blog.css';
+@import '/components/contacto/contacto.css';
+@import '/components/habilidades/habilidades.css';
+@import '/components/inicio/inicio.css';
+@import '/components/proyectos/proyectos.css';
+@import '/components/pieDePagina/pie-de-pagina.css';
+@import '/components/sobreMi/sobre-mi.css';
+@import '/components/encabezado/encabezado.css';
 
 html,body {
     height: 100%;

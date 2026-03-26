@@ -1,6 +1,6 @@
 import { globalStore } from "../../services/store.js"
 import { EstrategiasFiltrado} from "../../services/filtros.js"
-import { crearObservador } from "../../services/mutation_observer.js"
+import { crearObservador } from "../../services/mutation-observer.js"
 export class BlogComponent extends HTMLElement {
     constructor() {
         super()
