@@ -9,11 +9,13 @@
     margin-right: 5%;
 
 }
+
 .encabezado__titulo {
     padding: 15px;
     text-decoration: none;
     color: black;
 }
+
 @media (max-width: 768px) {
     .encabezado {
         text-align: center;

@@ -4,20 +4,24 @@
     height: auto;
     padding-bottom: 40px;
 }
+
 .blog__encabezado {
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     padding: 20px;
 }
+
 .blog__publicacion {
-    background: #FFFFFF;
+    background: #FFF;
     margin: 30px;
     padding: 5px;
     border-radius: 10px;
 }
+
 .blog__titulo {
     font-family :Georgia, 'Times New Roman', Times, serif;
 }
+
 .blog__fecha {
     color: #6A7282;
 }

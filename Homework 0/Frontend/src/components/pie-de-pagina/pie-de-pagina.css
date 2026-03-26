@@ -5,17 +5,19 @@
     width: 100%;
     background: #0A5B80;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     display: flex;
     flex-direction: column;
 }
+
 .pie-de-pag__redes-sociales {
     margin: 0 auto;
     display: flex;
     text-align: center;
 }
+
 .pie-de-pag__red-social {
     text-decoration: none;
     margin: 0 10px;
-    color: #FFFFFF;
+    color: #FFF;
 }

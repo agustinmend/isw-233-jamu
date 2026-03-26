@@ -4,32 +4,38 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
 .sobre-mi {
     padding: 20px;
     padding-bottom: 300px;
-    background: #FFFFFF;
+    background: #FFF;
     opacity: 0.8;
     margin: 40px;
 }
+
 .sobre-mi__imagen {
     text-align: left;
     padding-right: 50%;
 }
+
 .sobre-mi__encabezado {
     text-align: left;
     padding-left: 55%;
 }
+
 .sobre-mi__saludo {
     text-align: left;
     padding-left: 55%;
     color: #757575;
 }
+
 .sobre-mi__presentacion {
     text-align: left;
     padding-left: 55%;
     line-height: 1.5;
     padding-right: 40px;
 }
+
 @media (max-width: 768px) {
     .sobre-mi {
         margin: 20px;
@@ -49,6 +55,6 @@
     }
     
     .sobre-mi__imagen {
-        margin: 0 auto 20px auto;
+        margin: 0 auto 20px;
     }
 }
