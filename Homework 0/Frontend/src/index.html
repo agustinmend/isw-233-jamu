@@ -40,74 +40,7 @@
         </template>
 
         <template id="tpl-habilidades">
-            <div id="habilidades" class="habilidades">
-                <h2 class="habilidades__encabezado">Habilidades</h2>
-                <div class="habilidades__segmentos">
-                    <div class="habilidades__segmento">
-                        <div class="habilidades__icono">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <div class="habilidades__subtitulo">
-                            <h3>Desarrollador frontend</h3>
-                        </div>
-                        <div class="habilidades__texto">
-                            <p>Experiencia basica en desarrollo de frontend, conocimiento basico en herramientas de frontend</p>
-                        </div>
-                        <div class="habilidades__titulo-herramientas">
-                            <h4>herramientas de desarrollo</h4>
-                        </div>
-                        <div class="habilidades__lista-herramientas">
-                            <ul>
-                                <li>Angular</li>
-                                <li>React</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="habilidades__segmento">
-                        <div class="habilidades__segmento--icono">
-                            <i class="fa-solid fa-server"></i>
-                        </div>
-                        <div class="habilidades__segmento--encabezado-1">
-                            <h3>Desarrollador Backend</h3>
-                        </div>
-                        <div class="habilidades__segmento--texto">
-                            <p>Experiencia basica en desarrollo de Backend, conocimiento de conceptos basicos</p>
-                        </div>
-                        <div class="habilidades__segmento--encabezado-2">
-                            <h4>herramientas de desarrollo</h4>
-                        </div>
-                        <div class="habilidades__segmento--herramientas">
-                            <ul>
-                                <li>.Net</li>
-                                <li>Node.js</li>
-                                <li>Python</li>
-                                <li>SQL</li>
-                                <li>MongoDB</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="habilidades__segmento">
-                        <div class="habilidades__segmento--icono">
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
-                        </div>
-                        <div class="habilidades__segmento--encabezado-1">
-                            <h3>Otras habilidades</h3>
-                        </div>
-                        <div class="habilidades__segmento--texto">
-                            <p>Poseo habilidades extras como buen trabajo en equipo y manejo de otras herramientas</p>
-                        </div>
-                        <div class="habilidades__segmento--encabezado-2">
-                            <h4>herramientas que uso</h4>
-                        </div>
-                        <div class="habilidades__segmento--herramientas">
-                            <ul>
-                                <li>Miro</li>
-                                <li>Git</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{> vistas/habilidades }}
         </template>
 
         <template id="tpl-proyectos">
@@ -126,34 +59,7 @@
         </template>
         
         <template id="tpl-blogs">
-            <div id="blogs" class="blog">
-                <h2 class="blog__encabezado">Blog</h2>
-                <p id="contador-blog" class="blog__Contador"></p>
-                <div class="blog__filtros">
-                    <button data-filtro="todos">Todos</button>
-                    <button data-filtro="desarrollo">Desarrollo</button>
-                    <button data-filtro="diseno">DiseñO</button>
-                    <button data-filtro="favoritos">Favoritos</button>
-                </div>
-                <div class="blog__publicacion" data-id="post-1" data-categoria="desarrollo">
-                    <h3 class="blog__titulo">Mejores practicas en desarrollo de Software</h3>
-                    <p class="blog__fecha">15 de Enero, 2026</p>
-                    <p class="blog__texto">En este articulo señalo cuales son las buenas practicas que uno debe seguir al momento de desarrollar su sistema para mantener su codigo limpio y escalable</p>
-                    <button class="blog__favorito">Marcar Favorito</button>
-                </div>
-                <div class="blog__publicacion" data-id="post-2" data-categoria="diseno">
-                    <h3 class="blog__publicacion--titulo">Errores comunes al iniciar Figma</h3>
-                    <p class="blog__publicacion--fecha">15 de Enero, 2026</p>
-                    <p class="blog__publicacion--texto">En este articulo señalo y dejo el ejemplo claro de cosas que no se deben realizar cuando se esta iniciando en Figma</p>
-                    <button class="blog__favorito">Marcar Favorito</button>
-                </div>
-                <div class="blog__publicacion" data-id="post-3" data-categoria="desarrollo">
-                    <h3 class="blog__publicacion--titulo">Mi experiencia aprendiendo POO</h3>
-                    <p class="blog__publicacion--fecha">15 de Enero, 2026</p>
-                    <p class="blog__publicacion--texto">En este apartado dejo escrito lo sufrido en carne propia al momento de entender y aplicar los conceptos de POO</p>
-                    <button class="blog__favorito">Marcar Favorito</button>
-                </div>
-            </div>
+            {{> vistas/blogs }}
         </template>
 
         <template id="tpl-contacto">

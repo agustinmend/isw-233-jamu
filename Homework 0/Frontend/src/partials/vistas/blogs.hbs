@@ -1,0 +1,16 @@
+<div id="blogs" class="blog">
+    <h2 class="blog__encabezado">Blog</h2>
+    <p id="contador-blog" class="blog__Contador"></p>
+    <div class="blog__filtros">
+        <button data-filtro="todos">Todos</button>
+        <button data-filtro="desarrollo">Desarrollo</button>
+        <button data-filtro="diseno">DiseñO</button>
+        <button data-filtro="favoritos">Favoritos</button>
+    </div>
+
+    {{> blog-card id="post-1" categoria="desarrollo" titulo="Mejores practicas en desarrollo de Software" fecha="15 de Enero, 2026" texto="En este articulo señalo cuales son las buenas practicas que uno debe seguir al momento de desarrollar su sistema para mantener su codigo limpio y escalable" }}
+
+    {{> blog-card id="post-2" categoria="diseno" titulo="Errores comunes al iniciar Figma" fecha="15 de Enero, 2026" texto="En este articulo señalo y dejo el ejemplo claro de cosas que no se deben realizar cuando se esta iniciando en Figma" }}
+
+    {{> blog-card id="post-3" categoria="desarrollo" titulo="Mi experiencia aprendiendo POO" fecha="15 de Enero, 2026" texto="En este apartado dejo escrito lo sufrido en carne propia al momento de entender y aplicar los conceptos de POO" }}
+</div>
