@@ -18,5 +18,5 @@ import './components/sobre-mi/sobre-mi.css'
 import { Router } from "./services/router.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    const router = new Router()
+    new Router()
 })
