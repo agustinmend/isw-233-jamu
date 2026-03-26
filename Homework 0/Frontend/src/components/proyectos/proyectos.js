@@ -52,13 +52,13 @@ export class ProyectosComponent extends HTMLElement {
         const fragmentoTarjetas = document.createDocumentFragment()
         lote.forEach((proyecto) => {
             const tarjeta = templateCard.content.cloneNode(true)
-            tarjeta.querySelector('.proyectos__presentacion--imagen').src = proyecto.img
-            tarjeta.querySelector('.proyectos__presentacion--texto').textContent = proyecto.txt
+            tarjeta.querySelector('.proyectos__imagen').src = proyecto.img
+            tarjeta.querySelector('.proyectos__texto').textContent = proyecto.txt
             fragmentoTarjetas.appendChild(tarjeta)
         })
         tableroProyectos.appendChild(fragmentoTarjetas)
         this.indice += this.items_por_fila
-        if(this.indice >= proyectos.length && observador) {
+        if(this.indice >= proyectos.length && this.observador) {
             this.disconnectedCallback()
         }
     }
