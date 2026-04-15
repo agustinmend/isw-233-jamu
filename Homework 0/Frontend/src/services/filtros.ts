@@ -1,6 +1,8 @@
-import { globalStore } from "./store.js";
+import { globalStore } from "./store.ts";
 
-export const EstrategiasFiltrado = {
+type EstrategiaFiltrado = (articulos: HTMLElement[]) => void;
+
+export const EstrategiasFiltrado: Record<string, EstrategiaFiltrado> = {
     todos: (articulos) => articulos.forEach(art => art.style.display = 'block'),
     
     desarrollo: (articulos) => articulos.forEach(art => {
@@ -12,9 +14,15 @@ export const EstrategiasFiltrado = {
     }),
     
     favoritos: (articulos) => {
-        const favs = globalStore.favoritos
+        const favs: string[] = globalStore.favoritos; 
+        
         articulos.forEach(art => {
-            art.style.display = favs.includes(art.dataset.id) ? 'block' : 'none';
+            const id = art.dataset.id;
+            if (id && favs.includes(id)) {
+                art.style.display = 'block';
+            } else {
+                art.style.display = 'none';
+            }
         });
     }
 };
