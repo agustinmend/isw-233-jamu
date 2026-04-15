@@ -58,7 +58,7 @@ export class ProyectosComponent extends HTMLElement {
         })
         tableroProyectos.appendChild(fragmentoTarjetas)
         this.indice += this.items_por_fila
-        if(this.indice >= proyectos.length && observador) {
+        if(this.indice >= proyectos.length && this.observador) {
             this.disconnectedCallback()
         }
     }

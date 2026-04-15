@@ -1,3 +1,4 @@
+import './index.css'
 import './components/blog.js'
 import './components/contacto.js'
 import './components/encabezado.js'
